@@ -1,0 +1,437 @@
+body,
+td,
+th {
+  font-size: 0.625vw;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666;
+  cursor: default;
+  vertical-align: baseline;
+  outline: 0;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.625vw;
+  color: #666;
+  text-decoration: none;
+}
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr {
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+}
+:focus {
+  outline: 0;
+}
+img {
+  border: none;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+::selection {
+  background: transparent;
+  color: #666;
+}
+::-moz-selection {
+  background: transparent;
+  color: #666;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* ---------------------------------------------------------------------------------------------------------------- */
+#mainPage {
+  top: 50%;
+  left: 50%;
+  width: 67.708vw;
+  height: 41.667vw;
+  display: none;
+  overflow: auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: transparent url("images/background.png") no-repeat;
+  background-size: 100%;
+}
+/* ---------------------------------------------------------------------------------------------------------------- */
+#header {
+  float: left;
+  width: 91%;
+  height: 4.219vw;
+  padding: 11vw 0vw 0vw 2.813vw;
+}
+/* ---------------------------------------------------------------------------------------------------------------- */
+#mainMenu {
+  float: left;
+  width: 95%;
+  padding: 0 1.563vw;
+  background: #1a1a1a;
+}
+
+#searchInput {
+  margin: 0.521vw;
+}
+
+#mainMenu li {
+  float: left;
+  color: #999;
+  font-weight: 700;
+  margin-right: 0.156vw;
+  padding: 1.094vw 1.042vw;
+  list-style-type: none;
+  letter-spacing: 0.365vw;
+  text-transform: uppercase;
+  text-shadow: 0 0.052vw rgba(0, 0, 0, 0.5);
+}
+
+#mainMenu li:hover {
+  color: #555;
+  padding: 1.094vw 1.042vw;
+  background: #cfcfcf;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  text-shadow: 0 0 rgba(0, 0, 0, 0.5);
+}
+
+#mainMenu li.active {
+  color: #555;
+  margin-top: -0.26vw;
+  background: #cfcfcf;
+  padding: 1.25vw 1.042vw 1.198vw;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  text-shadow: 0 0 rgba(0, 0, 0, 0.5);
+}
+
+#mainMenu li::selection {
+  color: #999;
+}
+
+#mainMenu li.active::selection,
+#mainMenu li:hover::selection {
+  color: #555;
+}
+/* ---------------------------------------------------------------------------------------------------------------- */
+#content {
+  float: left;
+  width: 67.708vw;
+  height: 21.563vw;
+  overflow: auto;
+  margin: 1.563vw 0vw 0vw 4.219vw;
+}
+
+#titleContent {
+  float: left;
+  width: 86%;
+  font-size: 1.042vw;
+  font-weight: 700;
+  margin-top: -2.396vw;
+  letter-spacing: 0.052vw;
+  margin-bottom: 0.781vw;
+  padding: 0.26vw 0 0.521vw 0.26vw;
+  text-transform: uppercase;
+  position: absolute !important;
+  border-bottom: 1px dotted #999;
+}
+/* ---------------------------------------------------------------------------------------------------------------- */
+#pageLeft {
+  float: left;
+  min-width: 36.198vw;
+  max-width: 36.198vw;
+  max-height: 21.563vw;
+  overflow-y: scroll;
+  text-align: justify-all;
+}
+#pageRight {
+  float: left;
+  min-width: 22.083vw;
+  max-width: 22.083vw;
+  margin-left: 0.521vw;
+  padding-left: 0.521vw;
+  line-height: 1.042vw;
+  min-height: 21.563vw;
+  max-height: 21.563vw;
+  border-left: 1px dotted #888;
+}
+
+#pageRight h2 {
+  padding: 0;
+  margin: 0.26vw 0 0.521vw;
+}
+/* ----- SEARCH ---------------------------------------------------------------------------------------------------- */
+.inputSearch {
+  border: 0;
+  float: right;
+  width: 7.813vw;
+  padding: 0.521vw;
+  margin-right: 0.521vw;
+  border-radius: 3px;
+  border-bottom: 1px solid rgba(53, 82, 143, 1);
+}
+
+.buttonSearch {
+  border: 0;
+  float: right;
+  color: #c7ea9e;
+  padding: 0.521vw 0.781vw;
+  border-radius: 3px;
+  background: #3b6e00;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.buttonSearch:hover {
+  background: #2d5300;
+  transition: all 0.9s;
+}
+/* ----- SEARCHPAGE ------------------------------------------------------------------------------------------------ */
+#pageLeftSearch {
+  float: left;
+  min-width: 36.198vw;
+  max-width: 36.198vw;
+  max-height: 21.563vw;
+  overflow-y: scroll;
+}
+
+.fineSeachTitle {
+  float: left;
+  min-width: 34.115vw;
+  max-width: 34.115vw;
+  margin-bottom: 0.521vw;
+  padding-bottom: 0.521vw;
+  border-bottom: 1px dotted #ccc;
+}
+
+.searchBox {
+  float: left;
+  width: 34.115vw;
+  padding: 1.042vw;
+  font-size: 0.677vw;
+  background: #fff;
+  border-radius: 3px;
+  line-height: 1.146vw;
+}
+
+.searchBox b,
+.recordBox {
+  color: #333;
+}
+
+.searchBox update {
+  color: #c7ea9e;
+  font-size: 0.521vw;
+  border-radius: 3px;
+  background: #2d5300;
+  padding: 0.104vw 0.365vw 0.156vw;
+}
+
+.recordBox {
+  float: left;
+  width: 34.115vw;
+  padding: 1.042vw;
+  font-size: 0.677vw;
+  margin-top: 0.521vw;
+  line-height: 1.146vw;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.recordBox:hover {
+  transition: all 0.9s;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.logsBox {
+  float: left;
+  width: 34.115vw;
+  font-size: 0.677vw;
+  line-height: 1.146vw;
+  padding: 0.521vw 1.042vw;
+  border-radius: 3px;
+  margin-bottom: 0.521vw;
+  background: #fff;
+}
+
+.logsBox:last-child {
+  margin-bottom: 0vw;
+}
+/* ----- PRISON ---------------------------------------------------------------------------------------------------- */
+.inputPrison {
+  border: 0;
+  float: left;
+  width: 11.719vw;
+  padding: 0.781vw;
+  margin-right: 0.521vw;
+  border-radius: 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.inputPrison2 {
+  border: 0;
+  float: left;
+  width: 11.719vw;
+  padding: 0.781vw;
+  border-radius: 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.textareaPrison {
+  border: 0;
+  float: left;
+  width: 36.198vw;
+  resize: none;
+  height: 10.417vw;
+  padding: 0.781vw;
+  margin-top: 0.521vw;
+  border-radius: 3px;
+}
+
+.buttonPrison {
+  border: 0;
+  float: right;
+  color: #c7ea9e;
+  margin-top: 0.521vw;
+  padding: 0.521vw 0.781vw;
+  border-radius: 3px;
+  background: #3b6e00;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.buttonPrison:hover {
+  background: #2d5300;
+  transition: all 0.9s;
+}
+/* ----- FINE ---------------------------------------------------------------------------------------------------- */
+.inputFine {
+  border: 0;
+  float: left;
+  width: 17.813vw;
+  padding: 0.781vw;
+  margin-right: 0.521vw;
+  border-radius: 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.inputFine2 {
+  border: 0;
+  float: left;
+  width: 17.865vw;
+  padding: 0.781vw;
+  border-radius: 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.textareaFine {
+  border: 0;
+  float: left;
+  width: 36.198vw;
+  resize: none;
+  height: 10.417vw;
+  padding: 0.781vw;
+  margin-top: 0.521vw;
+  border-radius: 3px;
+}
+
+.buttonFine {
+  border: 0;
+  float: right;
+  color: #c7ea9e;
+  margin-top: 0.521vw;
+  padding: 0.521vw 0.781vw;
+  border-radius: 3px;
+  background: #3b6e00;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.buttonFine:hover {
+  background: #2d5300;
+  transition: all 0.9s;
+}
+
+s {
+  color: #3b6e00;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 71.146vw) {
+  /* 1366x768 */
+  body {
+    zoom: 0.8;
+  }
+}
+@media only screen and (max-width: 67.188vw) {
+  /* 1024x768 */
+  body {
+    zoom: 0.7;
+  }
+}
+@media only screen and (max-width: 53.333vw) {
+  /* 1024x768 */
+  body {
+    zoom: 0.5;
+  }
+}

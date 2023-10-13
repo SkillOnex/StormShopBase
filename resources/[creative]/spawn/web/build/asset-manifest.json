@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/web/build/static/css/main.a2a7aa1a.css",
+    "main.js": "/web/build/static/js/main.4704625d.js",
+    "static/media/Amazon-Ember-Medium.ttf": "/web/build/static/media/Amazon-Ember-Medium.803b0c95226591a84d03.ttf",
+    "static/media/logo-candy.png": "/web/build/static/media/logo-candy.ac4662d332c5a4e1ecc9.png",
+    "static/media/logo.png": "/web/build/static/media/logo.c523d72e11764b7f51c6.png",
+    "index.html": "/web/build/index.html",
+    "main.a2a7aa1a.css.map": "/web/build/static/css/main.a2a7aa1a.css.map",
+    "main.4704625d.js.map": "/web/build/static/js/main.4704625d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2a7aa1a.css",
+    "static/js/main.4704625d.js"
+  ]
+}

@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+* {
+    overflow: hidden;
+    user-select: none;
+    /* box-sizing: border-box; */
+}
+
+.target-eye {
+    zoom: 1.15;
+}
+
+.Target {
+    width: 100vw;
+    padding-top: 10px;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.Wrapper {
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% + 22px);
+}
+
+.Label {
+    float: left;
+    letter-spacing: 0.5px;
+}
+
+.Text {
+    font-size: 13.6px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* padding-left: 8px; */
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+    padding-left: 5px;
+    list-style: none;
+    user-select: none;
+    white-space: nowrap;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.Text div {
+    padding: 8px 7px;
+    display: table;
+    /* margin: 0 0 6px; */
+    border-radius: 5px;
+    /* background: rgba(0,0,0,.5); */
+    transition: all 0.3s ease;
+    will-change: transform;
+}
+
+.Text div:hover {
+    color: #fff;
+    background: rgba(0, 165, 80, 0.8);
+    transform: scale(1.1);
+}
+
+font-family: "Roboto",
+Arial,
+Helvetica,
+sans-serif;

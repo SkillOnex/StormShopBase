@@ -1,0 +1,67 @@
+@font-face {
+	font-family: "DSEG7Classic";
+	src: url("fonts/dseg7.ttf");
+}
+
+html,body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	cursor: default;
+	font-size: 11px;
+	overflow: hidden;
+	box-sizing: border-box;
+	background: transparent;
+}
+
+:focus { outline: 0; }
+u { text-decoration: none; }
+::-webkit-scrollbar { width: 0; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: transparent; }
+::-webkit-scrollbar-thumb:hover { background: transparent; }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+#Radio {
+	bottom: 0;
+	right: 50px;
+	width: 180px;
+	height: 380px;
+	display: none;
+	position: absolute;
+	background: url("images/Radio.png");
+}
+
+.RadioInative {
+	float: left;
+	width: 26px;
+	height: 39px;
+	margin-top: 127px;
+	margin-left: 77px;
+}
+
+.RadioActive {
+	float: left;
+	width: 41px;
+	height: 33px;
+	margin-top: -22px;
+	margin-left: 139px;
+}
+
+.RadioFrequency {
+	border: 0;
+	float: left;
+	width: 108px;
+	height: 94px;
+	font-size: 33px;
+	margin-top: 90px;
+	margin-left: 38px;
+	text-align: center;
+	letter-spacing: 2px;
+	background: transparent;
+	font-family: "DSEG7Classic";
+}

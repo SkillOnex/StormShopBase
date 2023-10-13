@@ -1,0 +1,10 @@
+artifacts/
+cache/
+resources/[roupas]/steam/*
+resources/[testes]/[addons]
+resources/[anticheat]
+resources/[mapas]
+
+startNavs.bat
+resources/\[roupas\]/*
+resources/\[veiculos\]/*

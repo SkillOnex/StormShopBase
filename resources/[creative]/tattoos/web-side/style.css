@@ -1,0 +1,530 @@
+@font-face {
+  font-family: "TT Lakes";
+  src: url("./fonts/ttlakes.eot"); /* IE9*/
+  src: url("./fonts/ttlakes.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./fonts/ttlakes.woff2") format("woff2"),
+    /* chrome、firefox */ url("./fonts/ttlakes.woff") format("woff"),
+    /* chrome、firefox */ url("./fonts/ttlakes.ttf") format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("./fonts/ttlakes.svg") format("svg"); /* iOS 4.1- */
+}
+@font-face {
+  font-family: "TT Lakes Bold";
+  src: url("./fonts/TTLakes-Bold.ttf"); /* IE9*/
+  src: url("./fonts/TTLakes-Bold.ttf") format("truetype"); /* iOS 4.1- */
+}
+
+:root {
+    --piv: 0.09259259259259259vh;
+    --color: #00a551;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "TT Lakes", sans-serif;
+    color: white;
+    user-select: none;
+}
+
+html {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    mix-blend-mode: normal;
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-size: 100%;
+    mix-blend-mode: normal;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    background: rgba(17, 17, 17, 0.90);
+    border: 0.477px solid rgba(255, 255, 255, 0.02);
+    width: calc(var(--piv) * 408);
+    position: relative;
+    left: calc(var(--piv) * 55);
+    border-radius: calc(var(--piv) * 15);
+    display: flex;
+    flex-direction: column;
+}
+
+.container .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .item {
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    background: rgba(255, 255, 255, 0.01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(var(--piv) * 365);
+    height: calc(var(--piv) * 53);
+    margin-top: calc(var(--piv) * 10);
+}
+
+.container .item:first-child {
+    margin-top: calc(var(--piv) * 15)
+}
+
+.container .item .logo {
+    position: relative;
+    top: calc(var(--piv) * 5)
+}
+
+.container .item .logo img {
+    width: calc(var(--piv) * 100)
+}
+
+.container .item .name h1 {
+    font-size: calc(var(--piv) * 13);
+    color: rgba(255, 255, 255, 0.60);
+    font-family: "TT Lakes Bold";
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: normal;
+    border-radius: calc(var(--piv) * 5.5);
+}
+
+.container .item.complete {
+    justify-content: left;
+}
+
+.container .left {
+    position: relative;
+    left: calc(var(--piv) * 16)
+}
+
+.container .left h1 {
+    font-size: calc(var(--piv) * 10);
+    color: rgba(255, 255, 255, 0.65);
+    font-family: "TT Lakes Bold";
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: normal;
+}
+
+.container input[type="range"] {
+    width: calc(var(--piv) * 160);
+    height: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: rgba(255, 255, 255, 0.01);
+    /* -webkit-appearance: none; */
+}
+
+.container input[type="range"]::-webkit-slider-thumb {
+    position: relative;
+    z-index: 3;
+    width: 10px;
+    height: 15px;
+
+    border-radius: 3px;
+    background: var(--color);
+    -webkit-appearance: none;
+    border: calc(var(--piv) * 5) solid var(--color);
+}
+
+
+.container .left input {
+    position: relative;
+    top: calc(var(--piv) * 8);
+}
+
+.container .other {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: calc(var(--piv) * 20); */
+    margin-bottom: calc(var(--piv) * 20);
+
+}
+
+.container .other img {
+    width: calc(var(--piv) * 15)
+}
+
+.container .other h1 {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.35);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    position: relative;
+    left: calc(var(--piv) * 5);
+    line-height: normal;
+}
+
+.container .other span {
+    color: rgba(255, 255, 255, 0.65)
+}
+
+
+.container .input {
+    background: rgba(255, 255, 255, 0.01);
+    display: flex;
+    width: calc(var(--piv) * 90);
+    height: calc(var(--piv) * 40);
+    border-radius: calc(var(--piv) * 8);
+    position: relative;
+    left: calc(var(--piv) * 95);
+    align-items: center;
+    justify-content: center;
+}
+
+.container .itens::-webkit-scrollbar {
+    width: 0;
+}
+
+.container .input input {
+    background: transparent;
+    border: 0;
+    outline: none;
+    width: calc(var(--piv) * 15);
+    font-size: calc(var(--piv) * 12);
+    font-family: "TT Lakes Bold";
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: bold;
+
+    line-height: normal;
+
+}
+
+.input input::placeholder {
+    font-family: '"TT Lakes"';
+    font-size: calc(var(--piv) * 12);
+    font-family: "TT Lakes Bold";
+    font-style: normal;
+    font-weight: bold;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    /* -moz-appearance: textfield;   */
+}
+
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: calc(var(--piv) * 20)
+}
+
+.page1 button {
+    opacity: 0.6600000262260437;
+    background: linear-gradient(22deg, rgba(18, 172, 90, 0.80) 0%, rgba(18, 172, 90, 0.40) 100%);
+
+    width: calc(var(--piv) * 365);
+    border-radius: calc(var(--piv) * 5);
+    height: calc(var(--piv) * 50);
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: calc(var(--piv) * 25);
+    opacity: 0.7;
+    margin-bottom: calc(var(--piv) * 25);
+    font-size: calc(var(--piv) * 15);
+}
+
+.select::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.select {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.container .buttons button.active {
+    border: 1px solid var(--color);
+    opacity: 0.6600000262260437;
+    background: linear-gradient(22deg, rgba(18, 172, 90, 0.80) 0%, rgba(18, 172, 90, 0.40) 100%), rgba(17, 17, 17, 0.85);
+    width: calc(var(--piv) * 175);
+    border-radius: calc(var(--piv) * 5);
+    height: calc(var(--piv) * 50);
+    position: relative;
+    margin-bottom: calc(var(--piv) * 25);
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .3s all;
+    font-size: calc(var(--piv) * 15);
+}
+
+.container .buttons button.active:hover {
+    transition: .3s all;
+    opacity: 1;
+}
+
+
+.container .buttons button {
+    background: rgba(255, 255, 255, 0.01);
+    border: none;
+    color: rgba(255, 255, 255, 0.65);
+    margin: 0 calc(var(--piv) * 10);
+    width: calc(var(--piv) * 175);
+    border-radius: calc(var(--piv) * 5);
+    height: calc(var(--piv) * 50);
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: calc(var(--piv) * 25);
+    transition: all 0.4s linear !important;
+    font-size: calc(var(--piv) * 15);
+    opacity: 0.6600000262260437;
+}
+
+.container .buttons .back:hover {
+    opacity: 1;
+    transition: all 0.4s linear !important;
+}
+
+.container button i {
+    position: relative;
+    right: calc(var(--piv) * 10);
+    color: rgba(255, 255, 255,0.65);
+    font-size: 12px;
+}
+
+.container .item .text {
+    display: flex;
+    align-items: center;
+}
+
+.container .item .text h1 {
+    font-size: calc(var(--piv) * 10);
+    color: rgba(255, 255, 255, 0.35);
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: normal;
+    position: relative;
+    left: calc(var(--piv) * 10);
+}
+
+
+.container .item .text span {
+    color: rgba(255, 255, 255, 0.65)
+}
+
+.container .input-rotate {
+    margin-left: calc(var(--piv) * 30);
+
+}
+
+
+.container .select {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+    left: calc(var(--piv) * 15);
+    max-height: 265px;
+    overflow-y: auto;
+    margin-top: calc(var(--piv) * 20);
+}
+
+.container .select .number {
+    width: calc(var(--piv) * 52.16);
+    background: rgba(255, 255, 255, 0.01);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(var(--piv) * 52.16);
+
+    margin: calc(var(--piv) * 3) calc(var(--piv) * 5.5);
+    border-radius: calc(var(--piv) * 8);
+    transition: all 0.2s linear;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+
+
+.container .select .number h1 {
+    font-size: calc(var(--piv) * 15);
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.container .select .number.active h1 {
+    font-size: calc(var(--piv) * 15);
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.container .select .number.active {
+    box-shadow: inset 0 0 0 1.5px rgba(18, 172, 90, 0.15);
+    background: linear-gradient(22deg, rgba(18, 172, 90, 0.80) 0%, rgba(18, 172, 90, 0.40) 100%);
+    transition: all 0.2s linear;
+}
+
+.container .select .number:not(.active):hover{
+    background: rgba(18, 172, 90, 0.6);
+    border: 1px solid rgba(18, 172, 90, 0.45);
+    transition: all 0.2s linear;
+    
+}
+
+.container .select .number:not(.active):hover h1{
+    color: white;
+    transition: all 0.5s linear;
+}
+
+.container .itens-select {
+    display: flex;
+    margin-top: calc(var(--piv) * 10);
+}
+
+.container .item-text {
+    width: 100%
+}
+
+.container .item-select {
+    width: calc(var(--piv) * 52.16);
+    background: rgba(255, 255, 255, 0.01);
+    display: flex;
+    transition: .3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    height: calc(var(--piv) * 52.16);
+    border-radius: calc(var(--piv) * 8);
+    margin: 0 calc(var(--piv) * 5.5);
+}
+
+.container .item-select.active {
+    border: 1px solid var(--color);
+    background: linear-gradient(22deg, rgba(18, 172, 90, 0.80) 0%, rgba(18, 172, 90, 0.40) 100%);
+}
+
+.container .item-select.active img {
+    opacity: 1;
+}
+
+.container .item-select img {
+    opacity: 0.3;
+}
+
+.text-description {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: calc(var(--piv) * 28);
+    line-height: normal;
+    position: relative;
+    left: calc(var(--piv) * 20);
+    text-transform: uppercase;
+}
+
+.cams {
+    position: fixed;
+    right: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding: calc(var(--piv) * 10);
+    top: 15rem;
+    border: 0.477px solid rgba(255, 255, 255, 0.02);
+    background: rgba(17, 17, 17, 0.90);
+    border-radius: calc(var(--piv) * 8)
+}
+
+.cams img{
+    margin: 0 20px;
+    width: 20px;
+}
+
+.cams .title {
+    font-family: "TT Lakes Bold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 22px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.35);
+    margin-bottom: 0.2rem;
+}
+
+.cams .set-camera {
+    width: 44px;
+    height: 44px;
+    margin-right: 5px;
+    align-items: center;
+    transition: all 0.2s linear;
+    justify-content: center;
+    display: inline-block;
+
+    border: 0.2px solid rgba(255, 255, 255, 0.02);
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: calc(var(--piv) * 8);
+}
+
+.cams .set-camera:hover {
+    background: rgba(17, 17, 17, 0.75);
+}
+
+.cams .set-camera img {
+    width: 1.4rem;
+    margin: 0.625rem;
+    opacity: 0.3;
+}
+
+.cams .set-camera:hover,
+.categorys .active,
+.cams .selected-cam{
+
+
+    /* border: 1px solid #db2626; */
+    box-shadow: inset 0 0 0 1.5px rgba(18, 172, 90, 0.15);
+    background: rgba(18, 172, 90, 0.6);
+    transition: all 0.2s linear;
+
+}
+
+.cams .set-camera:hover img{
+    opacity: 1;
+    transition: .3s ease-in-out;
+}
+
+.item-select:hover{
+    background: rgba(18, 172, 90, 0.80);
+    transition: .3s ease-in-out;
+    box-shadow: inset 0 0 0 1.5px rgba(18, 172, 90, 0.15);
+}
+
+.item-select:hover img{
+    opacity: 1;
+    transition: .3s ease-in-out;
+}

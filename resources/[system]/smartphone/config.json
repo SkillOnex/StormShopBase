@@ -1,0 +1,81 @@
+{
+    "token": "",
+    "client": {
+        "bankType": "fleeca",
+        "uploadServer": "https://discord.com/api/webhooks/1080019498251341906/7FJevTSYkUYc1Gx20ejUlf9gSrjTJKreOOuCR-NJbTVonDuS2tvBAmsr7pPqpSLlrnQf",
+        "allowUnsafeURL": true,
+        "videoServer": "ws://127.0.0.1:8080",
+        "case": "s20cda",
+        "isAndroid": true,
+        "apps": {
+            "calculator": "https://media.discordapp.net/attachments/896139336267993128/1080011539039395920/calculator.png",
+            "notes": "https://media.discordapp.net/attachments/896139336267993128/1080011609591775353/notes.png",
+            "settings": "https://media.discordapp.net/attachments/896139336267993128/1080011611160461322/settings.png",
+            "contacts": "https://media.discordapp.net/attachments/896139336267993128/1080011609868615730/phone.png",
+            "sms": "https://media.discordapp.net/attachments/896139336267993128/1080011608589353000/sms.png",
+            "gallery": "https://media.discordapp.net/attachments/896139336267993128/1080011540280901702/gallery.png",
+            "phone": "https://media.discordapp.net/attachments/896139336267993128/1080011609868615730/phone.png",
+            "yellowpages": "https://media.discordapp.net/attachments/896139336267993128/1080011656018542612/yellowpages.png",
+            "minesweeper": "https://media.discordapp.net/attachments/896139336267993128/1080011609260445756/minado.png",
+            "casino": "https://media.discordapp.net/attachments/896139336267993128/1080017434901229679/casino.png",
+            "truco": "https://media.discordapp.net/attachments/896139336267993128/1080011654210781224/truco.png",
+            "tor": "https://media.discordapp.net/attachments/896139336267993128/1080011656538624050/tor.png",
+            "whatsapp": "https://media.discordapp.net/attachments/896139336267993128/1080011655758483466/whatsapp.png",
+            "instagram": "https://media.discordapp.net/attachments/896139336267993128/1080011540733906954/instagram.png",
+            "tinder": "https://media.discordapp.net/attachments/896139336267993128/1080011656295350342/tinder.png",
+            "facetime": "https://fivem.jesteriruka.dev/apps/samsung/facetime.webp"
+        },
+        "useGameClock": true,
+        "phone_template": "XXX-XXX",
+        "backgroundURL": "",
+        "disabledApps": [
+            "paypal",
+            "",
+            "twitter"
+        ]
+    },
+    "call_mode": "pma-voice",
+    "webhookURL": "https://discord.com/api/webhooks/1080019498251341906/7FJevTSYkUYc1Gx20ejUlf9gSrjTJKreOOuCR-NJbTVonDuS2tvBAmsr7pPqpSLlrnQf",
+    "instagram_verify": "Verify",
+    "instagram_accounts": {
+        "*": 1,
+        "Admin": 2
+    },
+    "moderator": "Admin",
+    "item": "cellphone",
+    "services": [
+        {
+            "name": "Policia",
+            "number": "190",
+            "permission": "Police"
+        },
+        {
+            "name": "Paramédico",
+            "number": "192",
+            "permission": "Paramedic"
+        },
+        {
+            "name": "Mecânico",
+            "number": "0800 042",
+            "permission": "Mechanic"
+        },
+        {
+            "name": "Prefeitura",
+            "number": "0800 666",
+            "permission": "Admin"
+        }
+    ],
+    "premium_apps": {
+        "weazel": {
+            "tags": [
+                "Noticias"
+            ],
+            "permission": "Admin"
+        },
+        "casino": {
+            "maxBet": 100000
+        }
+    },
+    "base": "creative_network",
+    "channel": "stable"
+}

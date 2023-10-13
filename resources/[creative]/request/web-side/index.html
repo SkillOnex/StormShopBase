@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Santa Request</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		<script src="jquery.js"></script>
+	</head>
+	<body>
+		<div class="request-area">
+			<div class="request-frame">
+				<div class="request-text-frame">
+					<span>SOLICITAÇÃO</span>
+					<p class="message"></p>
+				</div>
+				<div class="buttons-area">
+					<button>
+						<img src="./assets/confirm.svg" />
+						<p>(Y) <span class="success">Sim</span></p>
+					</button>
+					<button>
+						<img src="./assets/reject.svg" />
+						<p>(U) <span class="failure">Não</span></p>
+					</button>
+				</div>
+			</div>
+		</div>
+		
+		<div id="Request">
+			<div id="RequestM"></div>
+			<div id="RequestY"></div>
+			<div id="RequestU"></div>
+		</div>
+	</body>
+</html>

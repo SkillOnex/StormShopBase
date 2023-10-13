@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { margin: 0 auto;}
+
+body { position: relative; display: block;}
+
+#tempos{ width: 350px; height: 140px; position: absolute; border-radius: 0px 20px 20px 0px; padding-left: 10px; left: -10px; top: 50px; background-image: url("images/bg.png"); background-size: 100% 100%; border-left: 2px solid #12ac5a; border-bottom: 2px solid #12ac5a; border-top: 2px solid #12ac5a; font-family: 'Kanit', sans-serif; text-align: center;}
+#tempos img { width: 90%; height: auto;}
+#tempos  h1{ color: #fff; text-align: center; font-size: 40px;}
+#tempos  span{ color: #fff; font-weight: 600; text-align: center; font-size: 13px;}
+#tempos td{ padding-left: 10px;}
+
+#checkpoint{ width: auto; height: auto; position: absolute;  padding-right: 10px; right: 0px; top: 200px;  font-family: 'Kanit', sans-serif; text-align: center; }
+#checkpoint span{ float:left; color: #fff; margin-right: 25px; font-size: 18px; margin-top: 17px;  font-weight: 500;  letter-spacing: 1px;}
+#checkpoint h1{ float:left;color: #fff; font-size: 45px; margin-right: 20px;  }
+#checkpoint p{ color: #fff;  font-size: 10px; margin-top: 17px;  font-weight: 500;  letter-spacing: 1px; text-align: center}
+
+
+#melhortempo{ width: 300px; height: 80px; position: absolute; border-radius: 0px 20px 20px 0px; padding-left: 10px; left: -10px; top: 220px; background-image: url("images/bg.png"); background-size: 100% 100%; border-left: 2px solid #12ac5a; border-bottom: 2px solid #12ac5a; border-top: 2px solid #12ac5a; font-family: 'Kanit', sans-serif; text-align: center;}
+#melhortempo img { width:45px; height: auto; float: left; margin-top: 13px; margin-left: 5px;}
+#melhortempo  h1{ color: #fff; text-align: center; font-size: 40px;}
+#melhortempo  span{ color: #fff; font-weight: 600; text-align: center; font-size: 13px;}
+#melhortempo td{ padding-left: 10px;}
+
+#Corredor { display: none;}
+
+
+
+ 
